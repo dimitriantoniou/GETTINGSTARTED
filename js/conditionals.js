@@ -22,6 +22,7 @@
  * console.logging the function's return value
  */
 
+/* in the console
 function analyzeColor(color){
     if(color==="blue"){
         console.log("The color is blue!");
@@ -34,7 +35,24 @@ function analyzeColor(color){
     }
 
     }
-
+    */
+var colorInput = prompt("Pick a color, any color!");
+function analyzeColor(colorInput){
+    var color=colorInput.toLowerCase();
+    console.log(color);
+    if (color==="blue"){
+        alert("Blue is the color of a famous rhapsody...");
+        console.log("BLUE");
+    }else if(color==="red"){
+        alert("Red, I think I met a girl in a red riding hood once...");
+    }else if(color=== "purple"){
+        alert("Wow, purple is my favorite color!")
+    }else{
+        alert("Hmmm..."+color+"I have never heard of that one...");
+        console.log("ELSE");
+    }
+}
+analyzeColor(colorInput);
 
 // Don't change the next two lines!
 // These lines create two variables for you:
